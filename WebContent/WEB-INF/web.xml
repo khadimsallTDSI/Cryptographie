@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0"> 
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>org.java.chiffrement.Home</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Accueil</servlet-name>
+		<servlet-class>org.java.chiffrement.Accueil</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Accueil</servlet-name>
+		<url-pattern>/accueil</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AsymCipher</servlet-name>
+		<servlet-class>org.java.chiffrement.AsymCipher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AsymCipher</servlet-name>
+		<url-pattern>/asym</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>Test2</servlet-name>
+		<servlet-class>org.java.chiffrement.Test2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test2</servlet-name>
+		<url-pattern>/test2</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>CleSecrete</servlet-name>
+		<servlet-class>org.java.chiffrement.CleSecrete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CleSecrete</servlet-name>
+		<url-pattern>/secret</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>Chiffrement</servlet-name>
+		<servlet-class>org.java.chiffrement.Chiffrement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Chiffrement</servlet-name>
+		<url-pattern>/chiffrement</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>Generation</servlet-name>
+		<servlet-class>org.java.chiffrement.Generation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Generation</servlet-name>
+		<url-pattern>/gen</url-pattern>
+	</servlet-mapping>
+	
+	<display-name>Formulaire</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Formulaire</servlet-name>
+    <servlet-class>org.java.chiffrement.Formulaire</servlet-class>
+    <multipart-config>
+      <location>/Users/mac/Desktop/</location>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Formulaire</servlet-name>
+    <url-pattern>/formulaire</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <display-name>FileCipherAsym</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>FileCipherAsym</servlet-name>
+    <servlet-class>org.java.chiffrement.FileCipherAsym</servlet-class>
+    <multipart-config>
+      <location>/Users/mac/Desktop/</location>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>1048576</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileCipherAsym</servlet-name>
+    <url-pattern>/Asymfile</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+		<servlet-name>SignatureMessage</servlet-name>
+		<servlet-class>org.java.chiffrement.SignatureMessage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignatureMessage</servlet-name>
+		<url-pattern>/signature</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>Historique</servlet-name>
+		<servlet-class>org.java.chiffrement.Historique</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Historique</servlet-name>
+		<url-pattern>/historique</url-pattern>
+	</servlet-mapping>
+  
+  
+  
+  <servlet>
+		<servlet-name>SessionTest</servlet-name>
+		<servlet-class>org.java.chiffrement.SessionTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SessionTest</servlet-name>
+		<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DaoServlet</servlet-name>
+		<servlet-class>org.java.chiffrement.DaoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DaoServlet</servlet-name>
+		<url-pattern>/dao</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
